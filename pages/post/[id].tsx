@@ -37,5 +37,5 @@ export async function getServerSideProps({ params }) {
     const post = await res.json()
 
     // Pass post data to the page via props
-    return { props: { post } }
+    return { props: { post } as any } as any
 }
