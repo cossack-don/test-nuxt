@@ -5,7 +5,7 @@ import Link from "next/link";
 
 
 
-export default function Home({data }) {
+export default function Home({data }:string) {
 
   return (
     <div>{data?.map(item => {
