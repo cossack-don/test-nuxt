@@ -1,11 +1,11 @@
 
-import { Inter } from 'next/font/google'
+
 
 import Link from "next/link";
 
 
 
-export default function Home({data }:any) {
+export default function Home({data }) {
 
   return (
     <div>{data?.map(item => {
@@ -23,5 +23,5 @@ export async function getServerSideProps() {
   const data = await res.json()
 
 
-  return { props: { data } as any } as any
+  return { props: { data }  }
 }
