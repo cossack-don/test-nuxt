@@ -1,4 +1,4 @@
-const id = ({post}) => {
+const id = ({post}:any) => {
 
     return (<div>SSR ID - {post.id} {post.name}</div>)
 }
