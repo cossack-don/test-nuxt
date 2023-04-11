@@ -5,10 +5,10 @@ import Link from "next/link";
 
 
 
-export default function Home({data }:string) {
+export default function Home({data }:any) {
 
   return (
-    <div>{data?.map(item => {
+    <div>{data?.map((item:any) => {
       return <div key={item.id}>
         {/*as={`/post/${item.id}`}*/}
         <Link href={`/post/${item.id}`} >link {item.id}</Link>

@@ -30,7 +30,7 @@ export default id
 //
 // }
 
-export async function getServerSideProps({ params }) {
+export async function getServerSideProps({ params }:any) {
     // params contains the post `id`.
     // If the route is like /posts/1, then params.id is 1
     const res = await fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`)
